@@ -53,7 +53,14 @@
 })()
 
 
-
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1){  
+      $('header').addClass("sticky");
+  }
+  else{
+      $('header').removeClass("sticky");
+  }
+});
 
 
 // When the user scrolls down 20px from the top of the document, slide down the navbar
